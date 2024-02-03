@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+    <div>
+        <h3>This is the Home page</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt suscipit excepturi itaque eum quis, perferendis blanditiis veritatis iste animi amet id, consectetur provident nisi hic dignissimos cum dolorem omnis explicabo nulla doloribus enim debitis! Sunt nulla voluptatibus officiis, voluptates itaque ducimus suscipit ipsam veniam deleniti quae magnam voluptate saepe optio libero atque facilis incidunt veritatis repudiandae? Dicta aliquam illum explicabo quod molestias quae tempore, sit incidunt aperiam sunt necessitatibus at sint? Officiis excepturi facere cum ipsa distinctio animi, dolore sunt placeat neque numquam non illo explicabo deleniti eos quasi, eveniet quia, quidem mollitia. Neque eligendi unde sequi ex atque eum voluptates, molestias excepturi quos amet consequatur asperiores, soluta, dolorem nostrum temporibus earum cum commodi maiores qui nam saepe aliquid. Numquam odit, laborum iusto, dolore neque, blanditiis est pariatur magni labore fuga nulla dolorum quasi! Nostrum error labore enim maiores tenetur distinctio odit voluptatum sit officia porro animi commodi, in dicta necessitatibus consequatur rem! Dolorum aut numquam enim facilis. Voluptatibus odit est temporibus. Fugiat vero ea reiciendis pariatur doloremque magnam dolore rerum officia explicabo ut excepturi harum optio porro quisquam nam blanditiis, atque ducimus, perspiciatis minus rem cupiditate sint provident ullam in! Libero est perspiciatis exercitationem veritatis. Incidunt odit dolores saepe.</p>
+        <h3 style='text-align: center'>   Current datetime: {% now "jS F Y H:i" %} <h3>
+
+            <center class="row">
+                <hr>
+                <h2>Weather</h2>
+                <form method="post" class="col-md-6 col-md-offset-3">
+                  {% csrf_token %}
+                  <div class="input-group">
+                    <input type="text" class="form-control" name="city" placeholder="Search by city">
+                    <div class="input-group-btn">
+                      <button class="btn btn-default" type="submit">
+                        <i class="glyphicon glyphicon-search"></i>
+                      </button>
+                    </div>
+                    <form>
+              </center>
+              <div class="row">
+                {% if country_code and coordinate and temp and pressure and humidity %}
+                <div class="col-md-6 col-md-offset-3">
+                  <h3>Country code : {{country_code}}</h1>
+                    <h3>Temperaure : {{temp}}</h5>
+                    
+                </div>
+                {% endif %}
+              </div>
+
+
+            </div>
+    <footer style="background-color: mediumpurple; margin-top: 52vh; font-size: 20px">
+        <hr>
+        Author: Krishna Rudani<br>
+        &copy; Copyright reserved<br>
+        <small><a href="mailto:fake@fake.com">mail@fake.com</a></small>
+    </footer>
+    {% endblock body %}
+
+
+<style>
+    body{
+        margin: 0px;
+        min-height: 100%;
+        position: relative;
+        font-family: "Helvetica", "Courier New";
+        }
+
+    div{
+        margin-left: 20px;
+        margin-right: 20px;
+        }
+
+    h1{
+        text-align: center;
+        }
+
+    .navbar ul{
+        list-style-type: none;
+        background-color: hsl(0, 0%, 25%);
+        padding:0px;
+        margin: 0px;
+        overflow: hidden;
+        }
+
+    .navbar a{
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+        display: block;
+        text-align: center;
+        }
+
+    .navbar a:hover{
+        background-color: hsl(0, 0%, 10%);
+        }
+
+    .navbar li{
+        float: left;
+        }
+
+    footer{
+        text-align: center
+    }
+</style>

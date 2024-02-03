@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+<div style="font-size: 20px">
+    <h1>Data</h1>
+    {% for item in list %}
+    Name: <strong>{{item.name}}</strong>
+    <ul>
+    <li>Email: <a href="mailto:{{item.email}}"> {{item.email}}</a></li>
+    <li>Phone no.: {{item.phone}}</li>
+    <li>Feedback: {{item.desc}}</li>
+    <li>Date: {{item.date}}</li>
+    </ul>   
+    <br/>
+    {% endfor %}
+ </div>
+{% endblock body %}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body >
+    <nav class="navbar" style="background-color: mediumpurple">
+        <h1 style='color: black'>Krishna's Webpage</h1>
+        <ul style="background-color: mediumpurple; font-size: 15px">
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/data">Contact data</a></li>
+        </ul>
+    </nav>
+    
+    {% block body %} {% endblock body %}
+</body>
+</html>
+
+<style>
+    body{
+        margin: 0px;
+        min-height: 100%;
+        position: relative;
+        font-family: "Helvetica", "Courier New";
+        }
+
+    div{
+        margin-left: 20px;
+        margin-right: 20px;
+        }
+
+    h1{
+        text-align: center;
+        }
+
+    .navbar ul{
+        list-style-type: none;
+        background-color: hsl(0, 0%, 25%);
+        padding:0px;
+        margin: 0px;
+        overflow: hidden;
+        }
+
+    .navbar a{
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+        display: block;
+        text-align: center;
+        }
+
+    .navbar a:hover{
+        background-color: hsl(0, 0%, 10%);
+        }
+
+    .navbar li{
+        float: left;
+        font-size: 15px
+        }
+
+    footer{
+        text-align: center
+    }
+</style>
