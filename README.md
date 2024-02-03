@@ -7,13 +7,17 @@
 2. Current date and Time
 3. Weather 
 4. Footer
-![image](https://github.com/krishna-exe/Assignment-PR-PYTHONIIP01909/assets/63543817/a1509207-e81e-4ac6-9259-3d2a07876033)
+![image](https://github.com/krishna-exe/Assignment-PR-PYTHONIIP01909/assets/63543817/74f9be2b-051e-41e5-84ef-32513672ea98)
 
 ### Contact Page:
 For data submission
-![image](https://github.com/krishna-exe/Assignment-PR-PYTHONIIP01909/assets/63543817/5782573c-2dea-4dde-ad9e-6b5a811bd278)
+![image](https://github.com/krishna-exe/Assignment-PR-PYTHONIIP01909/assets/63543817/039ca568-1275-4bc2-aa52-ee64d05d7970)
+![image](https://github.com/krishna-exe/Assignment-PR-PYTHONIIP01909/assets/63543817/297da896-f294-4dcc-a388-d0cfcb710e54)
+![image](https://github.com/krishna-exe/Assignment-PR-PYTHONIIP01909/assets/63543817/99954faf-81eb-4cda-8779-199c2005f3e6)
+
+
 
 ### Contact Data page:
 Displays the data retrieved from the contact page 
-![image](https://github.com/krishna-exe/Assignment-PR-PYTHONIIP01909/assets/63543817/8a65e663-fbf1-4c1b-82dc-5a2607992ddd)
+![image](https://github.com/krishna-exe/Assignment-PR-PYTHONIIP01909/assets/63543817/fdd5028b-b82f-4eab-a8c6-7ce88bc3a3a1)
 
